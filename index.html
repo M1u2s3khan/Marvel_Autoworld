@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Car Repair Noida | Car Repair, Service, Denting & Painting – Sector 16</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* --- CSS Variables --- */
+        :root {
+            --bg-main: #ffffff;
+            --bg-alt: #f8f9fa;
+            --text-dark: #111827;
+            --text-light: #4b5563;
+            --primary: #111111; /* Dark Theme Base */
+            --accent: #ff5e00; /* Vibrant Orange */
+            --accent-hover: #e65400;
+            --font-heading: 'Oswald', sans-serif;
+            --font-body: 'Inter', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background-color: var(--bg-main);
+            color: var(--text-dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* =========================================
+           NAVIGATION BAR
+           ========================================= */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(17, 17, 17, 0.98);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-icon {
+            background: var(--accent);
+            color: white;
+            width: 45px;
+            height: 45px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+        }
+
+        .logo-text {
+            color: #ffffff;
+            font-family: var(--font-heading);
+            font-size: 1.4rem;
+            line-height: 1.1;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .logo-text span {
+            display: block;
+            font-family: var(--font-body);
+            font-size: 0.65rem;
+            color: #a1a1aa;
+            letter-spacing: 3px;
+            margin-top: 4px;
+            font-weight: 500;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 35px;
+        }
+
+        .nav-links a {
+            font-weight: 500;
+            font-size: 0.85rem;
+            color: #d1d5db;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        .nav-call-btn {
+            background: var(--accent);
+            color: white;
+            padding: 10px 24px;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: background 0.3s;
+        }
+
+        .nav-call-btn:hover {
+            background: var(--accent-hover);
+        }
+
+        /* =========================================
+           HERO SECTION (Image Fixed & Clear)
+           ========================================= */
+        .hero {
+            min-height: 100vh;
+            width: 100%;
+            /* High-Resolution Image + Gradient Overlay */
+            background: linear-gradient(to right, rgba(17, 17, 17, 0.95) 0%, rgba(17, 17, 17, 0.7) 45%, rgba(17, 17, 17, 0.2) 100%), 
+                        url('assets/images/car2.png.jpg') no-repeat center center;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 120px 50px 60px; /* Top padding to avoid navbar overlap */
+            position: relative;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            margin-top: 20px;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--accent);
+            border: 1px solid rgba(255, 94, 0, 0.4);
+            background: rgba(255, 94, 0, 0.1);
+            padding: 8px 18px;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 25px;
+            backdrop-filter: blur(4px);
+        }
+
+        .hero h1 {
+            font-family: var(--font-heading);
+            font-size: 7rem;
+            line-height: 1;
+            color: #ffffff;
+            text-transform: uppercase;
+            margin-bottom: 25px;
+            letter-spacing: 1px;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.5); /* Text readable banane ke liye */
+        }
+
+        .hero h1 span {
+            color: var(--accent);
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            max-width: 650px;
+            margin-bottom: 40px;
+            color: #e5e7eb; /* Brighter text for visibility over image */
+            font-weight: 400;
+            line-height: 1.6;
+            text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 16px 32px;
+            font-weight: 600;
+            font-size: 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            color: white;
+            border: 2px solid var(--accent);
+            box-shadow: 0 4px 15px rgba(255, 94, 0, 0.4);
+        }
+
+        .btn-primary:hover {
+            background: var(--accent-hover);
+            border-color: var(--accent-hover);
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(255, 255, 255, 0.4);
+            color: white;
+            backdrop-filter: blur(5px);
+        }
+
+        .btn-outline:hover {
+            background: white;
+            color: var(--primary);
+            border-color: white;
+            transform: translateY(-2px);
+        }
+
+        /* Floating WhatsApp Icon */
+        .floating-wa {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25d366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+            z-index: 9999;
+            transition: transform 0.3s;
+        }
+
+        .floating-wa:hover {
+            transform: scale(1.1);
+        }
+
+        /* =========================================
+           REST OF THE PAGE STYLES
+           ========================================= */
+        section {
+            padding: 100px 50px;
+        }
+
+        .bg-alt {
+            background-color: var(--bg-alt);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-header h2 {
+            font-family: var(--font-heading);
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .section-header p {
+            color: var(--text-light);
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Stats */
+        .stats {
+            background: var(--primary);
+            padding: 50px 20px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            color: #fff;
+            text-align: center;
+        }
+
+        .stat-item {
+            padding: 20px;
+        }
+
+        .stat-item h3 {
+            font-size: 3rem;
+            color: var(--accent);
+            font-family: var(--font-heading);
+        }
+
+        .stat-item p {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #d1d5db;
+        }
+
+        /* About */
+        .about-container {
+            display: flex;
+            gap: 60px;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .about-img {
+            flex: 1;
+            height: 450px;
+            background: url('https://images.unsplash.com/photo-1555626906-fcf10d6851b4?q=80&w=1000&auto=format&fit=crop') center/cover;
+            border-radius: 8px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        .about-text h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--primary);
+            font-family: var(--font-heading);
+            text-transform: uppercase;
+        }
+
+        .about-text p {
+            color: var(--text-light);
+            margin-bottom: 20px;
+            font-size: 1.05rem;
+        }
+
+        /* Brands */
+        .brands-container {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            opacity: 0.6;
+            filter: grayscale(100%);
+            transition: 0.3s;
+        }
+        
+        .brands-container:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+        }
+
+        .brand-logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            font-family: var(--font-heading);
+            text-transform: uppercase;
+        }
+
+        /* Services */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .service-card {
+            background: var(--bg-main);
+            padding: 40px 30px;
+            border-radius: 8px;
+            border: 1px solid #e5e7eb;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.02);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--accent);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            background: rgba(255, 94, 0, 0.1);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .service-card i {
+            font-size: 1.5rem;
+            color: var(--accent);
+        }
+
+        .service-card h4 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            color: var(--primary);
+            font-family: var(--font-heading);
+            text-transform: uppercase;
+        }
+
+        .service-card p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        .service-card ul {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 15px;
+        }
+
+        .service-card ul li {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .service-card ul li::before {
+            content: "•";
+            color: var(--accent);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        /* Why Choose Us */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .feature-box {
+            padding: 40px 30px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+            border: 1px solid #e5e7eb;
+        }
+
+        .feature-box i {
+            font-size: 2.5rem;
+            color: var(--accent);
+            margin-bottom: 20px;
+        }
+
+        .feature-box h4 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: var(--primary);
+            font-family: var(--font-heading);
+            text-transform: uppercase;
+        }
+
+        .feature-box p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        /* Testimonials */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .testimonial-card {
+            background: #fff;
+            padding: 35px;
+            border-radius: 8px;
+            border-left: 4px solid var(--accent);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .stars {
+            color: var(--accent);
+            margin-bottom: 15px;
+        }
+
+        .testimonial-card p {
+            font-style: italic;
+            color: var(--text-light);
+            margin-bottom: 20px;
+        }
+
+        .client-info h5 {
+            color: var(--primary);
+            font-size: 1.1rem;
+            font-family: var(--font-heading);
+        }
+
+        .client-info span {
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
+
+        /* Contact */
+        .contact-container {
+            display: flex;
+            gap: 50px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .contact-info {
+            flex: 1;
+            background: var(--primary);
+            color: #fff;
+            padding: 50px;
+            border-radius: 8px;
+        }
+
+        .contact-info h4 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: var(--accent);
+            font-family: var(--font-heading);
+            text-transform: uppercase;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .info-item i {
+            color: var(--accent);
+            font-size: 1.2rem;
+            margin-top: 5px;
+        }
+
+        .info-item span {
+            font-size: 1rem;
+            color: #d1d5db;
+        }
+
+        .contact-form {
+            flex: 1.5;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            background: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            border: 1px solid #e5e7eb;
+        }
+
+        .contact-form input, .contact-form select, .contact-form textarea {
+            width: 100%;
+            padding: 16px;
+            background: var(--bg-alt);
+            border: 1px solid #e5e7eb;
+            color: var(--text-dark);
+            font-family: var(--font-body);
+            border-radius: 4px;
+            outline: none;
+            transition: border 0.3s;
+        }
+
+        .contact-form input:focus, .contact-form select:focus, .contact-form textarea:focus {
+            border-color: var(--accent);
+            background: #fff;
+        }
+
+        .contact-form textarea {
+            height: 120px;
+            resize: none;
+        }
+
+        /* FAQ */
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: #fff;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+            overflow: hidden;
+            border: 1px solid #e5e7eb;
+        }
+
+        .faq-question {
+            padding: 20px;
+            font-weight: 600;
+            color: var(--primary);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: var(--bg-alt);
+        }
+
+        .faq-answer {
+            padding: 20px;
+            color: var(--text-light);
+            display: none;
+            border-top: 1px solid #e5e7eb;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--primary);
+            color: #fff;
+            padding: 60px 50px 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            color: var(--accent);
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            font-family: var(--font-heading);
+            text-transform: uppercase;
+        }
+
+        .footer-col p, .footer-col a {
+            color: #9ca3af;
+            margin-bottom: 10px;
+            display: block;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .footer-col a:hover {
+            color: var(--accent);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #6b7280;
+            font-size: 0.85rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            nav { padding: 15px 20px; }
+            .nav-links { display: none; }
+            .hero { padding: 120px 30px 60px; }
+            .hero h1 { font-size: 5rem; }
+            .about-container, .contact-container { flex-direction: column; }
+            .about-img { width: 100%; height: 300px; }
+            section { padding: 70px 20px; }
+        }
+        
+        @media (max-width: 768px) {
+            .hero { 
+                padding: 100px 20px 50px; 
+                background-position: 65% center; /* Mobile pe image ka focus adjust kiya */
+            }
+            .hero h1 { font-size: 3.5rem; }
+            .hero p { font-size: 1rem; }
+            .hero-buttons { flex-direction: column; align-items: flex-start; width: 100%; }
+            .btn { width: 100%; }
+            .nav-call-btn { padding: 8px 15px; font-size: 0.8rem; }
+            .logo-text { font-size: 1.1rem; }
+            .floating-wa { width: 50px; height: 50px; font-size: 1.5rem; bottom: 20px; right: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo-container">
+            <div class="logo-icon">
+                <i class="fas fa-wrench"></i>
+            </div>
+            <div class="logo-text">
+                PRIME CAR REPAIR
+                <span>NOIDA • SECTOR 16</span>
+            </div>
+        </div>
+        
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact Us</a>
+            <a href="#location">Location</a>
+        </div>
+
+        <a href="tel:+919871070013" class="nav-call-btn">
+            <i class="fas fa-phone-alt"></i> +91 98710 70013
+        </a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-map-marker-alt"></i> Central Auto Market • Sector 16, Noida
+            </div>
+            <h1>YOUR CAR,<br><span>FIXED RIGHT.</span></h1>
+            <p>Noida’s trusted multi-brand workshop for car repair, car service, denting and painting — transparent estimates, genuine parts and free pickup & drop across Noida.</p>
+            
+            <div class="hero-buttons">
+                <a href="tel:+919871070013" class="btn btn-primary">
+                    <i class="fas fa-phone-alt"></i> Call +91 98710 70013
+                </a>
+                <a href="https://wa.me/919871070013" target="_blank" class="btn btn-outline">
+                    <i class="fab fa-whatsapp"></i> WhatsApp Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919871070013" target="_blank" class="floating-wa" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Stats Section -->
+    <div class="stats">
+        <div class="stat-item">
+            <h3>15+</h3>
+            <p>Years of Experience</p>
+        </div>
+        <div class="stat-item">
+            <h3>5000+</h3>
+            <p>Cars Serviced</p>
+        </div>
+        <div class="stat-item">
+            <h3>100%</h3>
+            <p>Genuine Parts</p>
+        </div>
+        <div class="stat-item">
+            <h3>4.9</h3>
+            <p>Google Rating</p>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="about-container">
+            <div class="about-img"></div>
+            <div class="about-text">
+                <div class="section-header" style="text-align: left; margin-bottom: 30px;">
+                    <h2>The Workshop Noida Trusts</h2>
+                </div>
+                <h3>Honest Advice, Skilled Workmanship, Fair Prices.</h3>
+                <p>Prime Car Repair Noida is a full-service, multi-brand car workshop in the heart of Central Auto Market, Sector 16 — a two-minute walk from the Sector-16 Metro Station.</p>
+                <p>For over 15 years, car owners across Noida have counted on us for honest advice, skilled workmanship and fair prices. Whether it’s a routine service, a stubborn engine fault, or denting and painting after an accident, your car is handled by trained technicians using computerized diagnostics and a dust-free paint booth.</p>
+                <p><strong>Our Promise:</strong> Genuine OEM and OES parts only — no duplicates, ever. Written estimate approved by you before any work begins. Free doorstep pickup and delivery across Noida sectors. Every repair and paint job backed by a service warranty.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brands Section -->
+    <div class="bg-alt" style="padding: 40px 20px;">
+        <div class="brands-container">
+            <div class="brand-logo">MARUTI SUZUKI</div>
+            <div class="brand-logo">HYUNDAI</div>
+            <div class="brand-logo">TATA MOTORS</div>
+            <div class="brand-logo">HONDA</div>
+            <div class="brand-logo">MAHINDRA</div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="section-header">
+            <h2>Complete Car Care Under One Roof</h2>
+            <p>From routine maintenance to full body restoration — every job is done by trained mechanics, with genuine parts and a written estimate before we start.</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-car"></i></div>
+                <h4>Car Repair</h4>
+                <p>Computerized diagnostics and expert mechanical repair for engine, brakes, suspension, AC and electricals — for all makes and models.</p>
+                <ul>
+                    <li>Engine & transmission repair</li>
+                    <li>Brake & suspension work</li>
+                    <li>Car AC repair & gas refill</li>
+                    <li>Electrical, battery & wiring</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-tools"></i></div>
+                <h4>Car Service</h4>
+                <p>Periodic maintenance packages that keep your car running like new — genuine oil and filters, honest checklists, on-time delivery.</p>
+                <ul>
+                    <li>Engine oil & filter change</li>
+                    <li>40-point multi-check inspection</li>
+                    <li>Wheel alignment & balancing</li>
+                    <li>Coolant & fluid top-up</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-cogs"></i></div>
+                <h4>Car Denting</h4>
+                <p>From parking-lot dings to accident damage — precise panel work that restores your car’s original body lines and finish.</p>
+                <ul>
+                    <li>Paintless dent removal</li>
+                    <li>Panel beating & alignment</li>
+                    <li>Bumper & fender repair</li>
+                    <li>Scratch & scuff removal</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-shield-alt"></i></div>
+                <h4>Car Painting</h4>
+                <p>Dust-free paint booth, computerized colour matching and premium clear coats for a factory-fresh shine that lasts.</p>
+                <ul>
+                    <li>Full body painting</li>
+                    <li>Computerized colour matching</li>
+                    <li>Single panel touch-up</li>
+                    <li>Protective clear coat finish</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-exchange-alt"></i></div>
+                <h4>Free Pickup & Drop</h4>
+                <p>Doorstep pickup and delivery across Noida sectors. Call us to arrange a convenient time for your car’s service.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-tint"></i></div>
+                <h4>Service Warranty</h4>
+                <p>Every repair and paint job is backed by a service warranty. Drive with confidence knowing your car is in expert hands.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="bg-alt">
+        <div class="section-header">
+            <h2>Why Choose Prime Car Repair Noida?</h2>
+        </div>
+        <div class="features-grid">
+            <div class="feature-box">
+                <i class="fas fa-user-check"></i>
+                <h4>Genuine Parts</h4>
+                <p>OEM and OES parts only — no duplicates, ever. We source directly from authorized manufacturers.</p>
+            </div>
+            <div class="feature-box">
+                <i class="fas fa-hand-holding-usd"></i>
+                <h4>Transparent Pricing</h4>
+                <p>Written estimate approved by you before any work begins. No hidden charges.</p>
+            </div>
+            <div class="feature-box">
+                <i class="fas fa-stopwatch"></i>
+                <h4>Free Pickup & Drop</h4>
+                <p>Doorstep pickup and delivery across Noida sectors. Convenience at no extra cost.</p>
+            </div>
+            <div class="feature-box">
+                <i class="fas fa-map-marker-alt"></i>
+                <h4>Prime Location</h4>
+                <p>Inside Central Auto Market, Sector 16 — just a 2-minute walk from Sector-16 Metro Station.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="reviews">
+        <div class="section-header">
+            <h2>What Our Customers Say</h2>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p>"I have been getting my car serviced at Prime Car Repair for over 3 years. The team is honest, the work is top-notch, and the free pickup and drop is a lifesaver. Highly recommended!"</p>
+                <div class="client-info">
+                    <div>
+                        <h5>Rajesh Kumar</h5>
+                        <span>Noida Sector 16</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p>"Got my car dented and painted here after an accident. The finish is factory-fresh, and they matched the colour perfectly. Transparent pricing and genuine parts. Great experience."</p>
+                <div class="client-info">
+                    <div>
+                        <h5>Priya Sharma</h5>
+                        <span>Noida Sector 18</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>"Best multi-brand workshop in Noida. They diagnosed an engine issue that two other garages couldn't fix. Fair prices and a written estimate before starting work. Trustworthy."</p>
+                <div class="client-info">
+                    <div>
+                        <h5>Amit Verma</h5>
+                        <span>Noida Sector 62</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-alt">
+        <div class="section-header">
+            <h2>Book Your Service Today</h2>
+            <p>Call, WhatsApp or drop by the workshop — we’ll inspect your car and share a free, no-obligation estimate.</p>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h4>Visit Our Workshop</h4>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>B-112A, Central Auto Market, Near Sector-16 Metro Station, Sector-16, Noida, Uttar Pradesh 201301</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <span>Mon – Sun: 9:00 AM – 8:00 PM (Open all 7 days)</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+91 98710 70013</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>info@primecarrepairnoida.shop</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-credit-card"></i>
+                    <span>Cash, Cheque, Debit/Credit Card, Online Payment Accepted</span>
+                </div>
+            </div>
+            
+            <form class="contact-form" onsubmit="event.preventDefault(); alert('Thank you! Your request has been submitted. We will contact you shortly.');">
+                <h4 style="margin-bottom: 10px; color: var(--primary); font-family: var(--font-heading); text-transform: uppercase;">Request a Callback</h4>
+                <input type="text" placeholder="Your Full Name" required>
+                <input type="tel" placeholder="Your Phone Number" required>
+                <select required>
+                    <option value="" disabled selected>Select Service Required</option>
+                    <option value="Car Repair">Car Repair</option>
+                    <option value="Car Service">Car Service</option>
+                    <option value="Car Denting">Car Denting</option>
+                    <option value="Car Painting">Car Painting</option>
+                    <option value="Free Pickup & Drop">Free Pickup & Drop</option>
+                    <option value="Other">Other Inquiry</option>
+                </select>
+                <textarea placeholder="Additional Details (e.g., Car model, preferred date & time)" required></textarea>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Request</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="location">
+        <div class="section-header">
+            <h2>Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    Do you offer free pickup and drop for car servicing?
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    Yes, we offer free doorstep pickup and delivery across Noida sectors for all major service bookings. Call us to arrange a convenient time.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    Are your spare parts genuine?
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    Absolutely. We strictly source all our auto parts directly from authorized OEM and OES manufacturers. No duplicates, ever.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    Do you provide a warranty on repairs and painting?
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    Yes, every repair and paint job is backed by a service warranty. We stand behind the quality of our work.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    Which car brands do you service?
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    We are a multi-brand workshop and service all major makes and models, including Maruti Suzuki, Hyundai, Tata Motors, Honda, Mahindra, and more.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="logo-container" style="margin-bottom: 20px;">
+                    <div class="logo-icon" style="width: 35px; height: 35px; font-size: 1.1rem;">
+                        <i class="fas fa-wrench"></i>
+                    </div>
+                    <div class="logo-text" style="font-size: 1.2rem;">
+                        PRIME CAR REPAIR
+                    </div>
+                </div>
+                <p>Your trusted multi-brand car workshop in Noida for repair, service, denting, and painting. Transparent estimates, genuine parts, and free pickup & drop.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <a href="#home">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#services">Services</a>
+                <a href="#reviews">Testimonials</a>
+            </div>
+            <div class="footer-col">
+                <h4>Services</h4>
+                <a href="#services">Car Repair</a>
+                <a href="#services">Car Service</a>
+                <a href="#services">Car Denting</a>
+                <a href="#services">Car Painting</a>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-map-marker-alt" style="margin-right: 10px; color: var(--accent);"></i> Sector 16, Noida, Uttar Pradesh</p>
+                <p><i class="fas fa-phone" style="margin-right: 10px; color: var(--accent);"></i> +91 98710 70013</p>
+                <p><i class="fas fa-envelope" style="margin-right: 10px; color: var(--accent);"></i> info@primecarrepairnoida.shop</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Prime Car Repair Noida. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Simple JS for FAQ -->
+    <script>
+        function toggleFaq(element) {
+            const answer = element.nextElementSibling;
+            const icon = element.querySelector('i');
+            if (answer.style.display === "block") {
+                answer.style.display = "none";
+                icon.classList.remove('fa-chevron-up');
+                icon.classList.add('fa-chevron-down');
+            } else {
+                answer.style.display = "block";
+                icon.classList.remove('fa-chevron-down');
+                icon.classList.add('fa-chevron-up');
+            }
+        }
+    </script>
+</body>
+</html>
